@@ -742,6 +742,28 @@
                                     <action selector="resetPushed:" target="XfG-lQ-9wD" id="QcC-Cg-u4R"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8eZ-IK-G3O">
+                                <rect key="frame" x="336" y="134" width="52" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="+" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="drd-4O-B2I">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="incrementerPushed:" target="XfG-lQ-9wD" id="L7K-LO-smQ"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gCw-m2-7uB">
+                                <rect key="frame" x="93" y="134" width="52" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="-" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="WNk-wu-Rku">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="incrementerPushed:" target="XfG-lQ-9wD" id="4fE-hQ-NmB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="oOa-Li-dda" firstAttribute="top" secondItem="rEW-12-MGM" secondAttribute="bottom" constant="13" id="4Ag-rA-gQ2"/>
@@ -753,6 +775,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="countButton" destination="oOa-Li-dda" id="kri-hL-jvL"/>
                         <outlet property="countLabel" destination="rEW-12-MGM" id="gjQ-8s-f4J"/>
                     </connections>
                 </viewController>
