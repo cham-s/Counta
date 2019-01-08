@@ -10,6 +10,8 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    @IBOutlet weak var countLabel: NSTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +24,11 @@ class ViewController: NSViewController {
         }
     }
 
-
+    @IBAction func resetPushed(_ sender: Any) {
+    }
+    
+    @IBAction func countPushed(_ sender: Any) {
+    }
+    
 }
 
